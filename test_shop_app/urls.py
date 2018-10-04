@@ -19,7 +19,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.shop_view, name='index'),
+    path('', views.index_view, name='index'),
     re_path(r'^product/(?P<product_slug>[-\w]+)/$', views.product_view, name= 'product_kek'),
     re_path(r'^category/(?P<category_slug>[-\w]+)/$', views.category_view, name= 'category_kek'),
 ]
