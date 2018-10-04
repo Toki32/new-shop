@@ -50,17 +50,18 @@
       </div>
     </nav>
 
+
     <!-- Page Content -->
     <div class="container">
-
+{% block content %}
       <div class="row">
 
         <div class="col-lg-3">
-
           <h1 class="my-4">Shop Name</h1>
           <div class="list-group">
             {% for category in categories %}
-              <a href="#" id="drop1"  class="list-group-item" data-toggle="drop">{{ category.name }}</a>
+              <a href="{{ category.get_absolute_url }}" id="drop1"  class="list-group-item"
+                 data-toggle="drop">{{ category.name }}</a>
                 <ul class="dropdown-menu">
                 <li><a href="#">Текст подпункта</a></li>
                 <li><a href="#">Текст подпункта</a></li>
@@ -102,6 +103,7 @@
             </a>
           </div>
 
+  <!-- PRODUCTS -->
           <div class="row">
             {% for product in products %}
             <div class="col-lg-4 col-md-6 mb-4">
@@ -109,7 +111,7 @@
                 <a href="#"><img class="card-img-top" src="{{ product.image.url }}" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="#">{{ product.name }}</a>
+                    <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                   </h4>
                   <h5>{{ product.price }} .руб</h5>
                   <p class="card-text">{{ product.description }}</p>
@@ -121,7 +123,6 @@
             </div>
             {% endfor %}
 
-
           </div>
           <!-- /.row -->
 
@@ -130,10 +131,10 @@
 
       </div>
       <!-- /.row -->
+{% endblock content %}
 
     </div>
     <!-- /.container -->
-
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
