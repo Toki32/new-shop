@@ -22,4 +22,11 @@ urlpatterns = [
     path('', views.index_view, name='index'),
     re_path(r'^product/(?P<product_slug>[-\w]+)/$', views.product_view, name= 'product_kek'),
     re_path(r'^category/(?P<category_slug>[-\w]+)/$', views.category_view, name= 'category_kek'),
+    re_path(r'^add_to_cart/(?P<product_slug>[-\w]+)/$', views.add_to_cart_view, name= 'add_to_cart'),
+
+    re_path(r'^cart/$', views.cart_view, name= 'cart'),
+    re_path('contact/', views.contact_view, name= 'contact'),
+    re_path(r'^shop/(?P<shop_slug>[-\w]+)/$', views.shop_view, name= 'shop'),
+
+
 ]

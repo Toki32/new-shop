@@ -39,7 +39,7 @@
             </div>
 
             </div>
-            <p><a href="cart.html" class="buy-now btn btn-sm btn-primary">Add To Cart</a></p>
+            <p><a href='{% url "add_to_cart" product_slug=product.slug %}' class="buy-now btn btn-sm btn-primary">Add To Cart</a></p>
 
           </div>
         </div>

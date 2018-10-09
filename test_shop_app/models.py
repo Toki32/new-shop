@@ -51,3 +51,38 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse('product_kek', kwargs={'product_slug': self.slug})
 
+
+class CartItem(models.Model):
+
+    product= models.ForeignKey(Product, on_delete=models.CASCADE)
+    qty= models.PositiveIntegerField(default=1)
+    item_total= models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
+
+    def __str__(self):
+        return "В корзине {0}".format(self.product.name)
+
+
+
+class Cart(models.Model):
+
+    items = models.ManyToManyField(CartItem,blank=True)
+    basket_total= models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
+
+    def __str__(self):
+        return str(self.id)
+
+class Shop(models.Model):
+    title = models.CharField(max_length=200, db_index=True, verbose_name="Название")
+    slug = models.SlugField(max_length=200, db_index=True, default='store_1')
+    time = models.CharField(max_length=200, db_index=True, verbose_name="Время работы")
+    address = models.TextField(blank=True, verbose_name="Адрес")
+    shop_photo= models.ImageField(upload_to= image_folder, verbose_name="Изображение магазина")
+    manager_name = models.CharField(max_length=200, db_index=True, verbose_name="Имя упр.")
+    mapurl= models.TextField(blank=True, verbose_name="Скрипт карты")
+
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('shop', kwargs={'shop_slug': self.slug})

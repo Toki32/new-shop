@@ -48,9 +48,9 @@
                   <li><a href="#"><span class="icon icon-person"></span></a></li>
                   <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
                   <li>
-                    <a href="cart.html" class="site-cart">
+                    <a href="{% url 'cart' %}" class="site-cart">
                       <span class="icon icon-shopping_cart"></span>
-                      <span class="count">2</span>
+                      <span class="count">{{ cart.items.count }}</span>
                     </a>
                   </li> 
                   <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
@@ -76,22 +76,22 @@
             </li>
 
 
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
-
+{% block content %}
     <div class="bg-light py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span>
+          <div class="col-md-12 mb-0"><a href="{% url 'index' %}">Home</a> <span class="mx-2 mb-0">/</span>
             <strong class="text-black">Shop</strong>
           </div>
         </div>
       </div>
     </div>
-{% block content %}
+
     <div class="site-section">
       <div class="container">
 
