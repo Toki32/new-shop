@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6bf6dba-67a5-4656-b04d-988ba54a86cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_shop_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/store1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_shop_app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/thankyou.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/thankyou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_shop_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_shop_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_shop_app/views.py" afterDir="false" />
     </list>
@@ -27,36 +27,39 @@
     <session id="-208199195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="24" />
-          <entry key="py" value="25" />
+          <entry key="html" value="45" />
+          <entry key="jpg" value="1" />
+          <entry key="png" value="1" />
+          <entry key="py" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="24" />
-          <entry key="Python" value="25" />
+          <entry key="HTML" value="45" />
+          <entry key="Image" value="2" />
+          <entry key="Python" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1799" />
-          <entry key="py" value="3276" />
+          <entry key="html" value="2552" />
+          <entry key="py" value="5173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1799" />
-          <entry key="Python" value="3276" />
+          <entry key="HTML" value="2552" />
+          <entry key="Python" value="5173" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_shop_app/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="608">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#634#671#0" expanded="true" />
               </folding>
@@ -78,26 +81,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="551">
+              <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_shop/urls.py">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/store1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="75" selection-start-line="32" selection-start-column="75" selection-end-line="32" selection-end-column="75" />
+            <state relative-caret-position="209">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +102,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_shop/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="-1482">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/checkout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="135" column="27" lean-forward="true" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="195" column="67" selection-start-line="195" selection-start-column="67" selection-end-line="195" selection-end-column="67" />
+              <folding>
+                <element signature="e#1#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,38 +156,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
+            <state relative-caret-position="1121">
               <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_shop_app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1539070996774" expanded="true" signature="1989:2131" ph="..." />
-                <marker date="1539070996774" expanded="true" signature="2372:2377" ph="..." />
-                <marker date="1539070996774" expanded="true" signature="2808:2840" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_shop_app/views.py">
+        <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/letter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <marker date="1539077390494" expanded="true" signature="594:599" ph="..." />
-                <marker date="1539077390494" expanded="true" signature="1207:1212" ph="..." />
-                <marker date="1539077390494" expanded="true" signature="1389:1394" ph="..." />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -165,6 +186,13 @@
       <find>for</find>
       <find>cart</find>
       <find>shop</find>
+      <find>cate</find>
+      <find>cart_t</find>
+      <find>cat</find>
+      <find>order</find>
+      <find>ship</find>
+      <find>top</find>
+      <find>item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,21 +207,30 @@
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/base.html" />
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/product.html" />
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/forms.py" />
-        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/admin.py" />
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop1.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html" />
-        <option value="$PROJECT_DIR$/test_shop_app/models.py" />
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html" />
         <option value="$PROJECT_DIR$/kladr/__init__.py" />
         <option value="$PROJECT_DIR$/kladr/fill_kladr.py" />
-        <option value="$PROJECT_DIR$/test_shop/settings.py" />
-        <option value="$PROJECT_DIR$/test_shop_app/urls.py" />
-        <option value="$PROJECT_DIR$/test_shop_app/views.py" />
         <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/store1.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html" />
+        <option value="$PROJECT_DIR$/test_shop_reserve/test_shop_app/admin.py" />
+        <option value="$PROJECT_DIR$/test_shop_reserve/test_shop_app/forms.py" />
+        <option value="$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/views.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/admin.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/thankyou.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve/test.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/checkout.html" />
+        <option value="$PROJECT_DIR$/test_shop/settings.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/forms.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/models.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/letter.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/tests.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/views.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/urls.py" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html" />
+        <option value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/letter.html" />
       </list>
     </option>
   </component>
@@ -218,6 +255,17 @@
             <path>
               <item name="test_shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="test_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="corater" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_shop" type="462c0819:PsiDirectoryNode" />
               <item name="test_shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -236,6 +284,17 @@
               <item name="test_shop" type="462c0819:PsiDirectoryNode" />
               <item name="test_shop_app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test_shop_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="test_shop_reserve" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test_shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test_shop" type="462c0819:PsiDirectoryNode" />
+              <item name="test_shop_reserve" type="462c0819:PsiDirectoryNode" />
               <item name="test_shop_app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -251,6 +310,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test_shop_app" />
+      <recent name="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve" />
       <recent name="$PROJECT_DIR$/test_shop_app/templates/test_shop_app" />
     </key>
   </component>
@@ -266,6 +327,60 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.tests">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test_shop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="test_shop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_shop_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_shop_app/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -280,7 +395,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -288,7 +403,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32930845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,34 +441,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop.html" />
-    <entry file="file://$PROJECT_DIR$/test_shop_app/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -361,94 +448,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/admin.py">
+    <entry file="file://$PROJECT_DIR$/kladr/actions.py" />
+    <entry file="file://$PROJECT_DIR$/kladr/fill_kladr.py" />
+    <entry file="file://$PROJECT_DIR$/kladr/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/kladr/addrfield.py" />
+    <entry file="file://$PROJECT_DIR$/kladr/app_meta.py" />
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="50" column="35" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html">
+    <entry file="file://$PROJECT_DIR$/test_shop_reserve/test_shop_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kladr/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#14#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kladr/fill_kladr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kladr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="67" lean-forward="true" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kladr/addrfield.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kladr/app_meta.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#634#671#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_shop_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="57" column="47" lean-forward="true" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1539070996774" expanded="true" signature="1989:2131" ph="..." />
-            <marker date="1539070996774" expanded="true" signature="2372:2377" ph="..." />
-            <marker date="1539070996774" expanded="true" signature="2808:2840" ph="..." />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -459,16 +474,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/shop-single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="139" selection-start-line="139" selection-end-line="155" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_reserve/test_shop_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_reserve/test_shop_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="86" selection-start-line="1" selection-start-column="86" selection-end-line="1" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/djangoshop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/templates/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/thankyou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1401" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecom-django-master (2)/djangoshop/ecomapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="226" column="8" lean-forward="true" selection-start-line="226" selection-start-column="8" selection-end-line="226" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/reserve/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/corater/corater.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/corater/corater.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1539192342731" expanded="true" signature="1993:1995" ph="..." />
+            <marker date="1539192342731" expanded="true" signature="2377:2382" ph="..." />
+            <marker date="1539192342731" expanded="true" signature="2813:2845" ph="..." />
+            <marker date="1539192342731" expanded="true" signature="3105:3107" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/letter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1482">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#634#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="233" column="32" selection-start-line="233" selection-start-column="32" selection-end-line="233" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="60" column="18" selection-start-line="60" selection-start-column="18" selection-end-line="60" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="135" column="27" lean-forward="true" selection-start-line="135" selection-start-column="27" selection-end-line="135" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_shop_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="-38">
+          <caret line="195" column="67" selection-start-line="195" selection-start-column="67" selection-end-line="195" selection-end-column="67" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1539077390494" expanded="true" signature="594:599" ph="..." />
-            <marker date="1539077390494" expanded="true" signature="1207:1212" ph="..." />
-            <marker date="1539077390494" expanded="true" signature="1389:1394" ph="..." />
+            <element signature="e#1#80#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_shop_app/templates/test_shop_app/letter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

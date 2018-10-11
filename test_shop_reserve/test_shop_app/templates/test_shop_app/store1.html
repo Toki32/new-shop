@@ -1,0 +1,37 @@
+{% extends "test_shop_app/index.html" %}
+{% block content %}
+<div class="site-section block-8">
+      <div class="container">
+        <div class="row justify-content-center  mb-5">
+          <div class="col-md-7 site-section-heading text-center pt-4">
+            <h2>{{ shop.title }}</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-7 mb-5">
+            <a href="{{ shop.get_absolute_url }}"><img src="{{ shop.shop_photo.url }}" alt="Image placeholder" class="img-fluid rounded"></a>
+          </div>
+          <div class="col-md-12 col-lg-5 text-center pl-md-5">
+
+            <p>Время работы: {{ shop.time }}</p>
+            <p>Адрес:  {{ shop.address }}</p>
+            <p>Управляющий:  {{ shop.manager_name }}</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-sm">Оставить отзыв</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section block-3 site-blocks-2 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-7 site-section-heading text-center pt-4">
+            <h2>Как нас найти</h2>
+          </div>
+        </div>
+        <div class="row">
+
+<script type="text/javascript" charset="utf-8" async src="{{ shop.mapurl }}"></script>
+
+        </div>
+    </div>
+{% endblock content %}

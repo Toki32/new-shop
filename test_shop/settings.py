@@ -31,13 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'test_shop_app',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'test_shop_app',
+    'crispy_forms',
 
 ]
 
@@ -128,3 +129,11 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static_in_dev'),)
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+EMAIL_USE_SSL = True
+EMAIL_USE_TLS= False
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'kekvald@yandex.ru'
+EMAIL_HOST_PASSWORD = 'Skin32123'
