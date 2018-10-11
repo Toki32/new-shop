@@ -95,6 +95,7 @@ ORDER_STATUS_CHOICES = (
     ('Оплачен', 'Оплачен')
 )
 
+
 class Order(models.Model):
 
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
@@ -113,3 +114,4 @@ class Order(models.Model):
 
     def __unicode__(self):
         return "Заказ №{0}".format(str(self.id))
+

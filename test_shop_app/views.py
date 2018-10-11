@@ -2,11 +2,11 @@
 from test_shop_app.models import Category, Product, Cart, CartItem, Shop, Order
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-from test_shop_app.forms import OrderForm
+from test_shop_app.forms import OrderForm, LoginForm, RegistrationForm
 from django.urls import reverse
 from django.core.mail import send_mail
 from django.template.loader import get_template
-from django.template import Context
+from django.contrib.auth import login, authenticate
 
 
 # Create your views here.
@@ -178,22 +178,7 @@ def checkout_view(request):
 #Отправка писем
 
 
-"""def letter_view(request):
-    try:
-        cart_id = request.session['cart_id']
-        cart = Cart.objects.get(id=cart_id)
-        request.session['total'] = cart.items.count()
-    except:
-        cart = Cart()
-        cart.save()
-        cart_id = cart.id
-        request.session['cart_id'] = cart_id
-        cart = Cart.objects.get(id=cart_id)
 
-    context = {
-        'cart': cart,
-    }
-    return render(request, 'test_shop_app/letter.html', context)"""
 
 
 def success(request, usermail):
@@ -219,16 +204,7 @@ def success(request, usermail):
 
 
 def make_order_view(request):
-    try:
-        cart_id = request.session['cart_id']
-        cart = Cart.objects.get(id=cart_id)
-        request.session['total'] = cart.items.count()
-    except:
-        cart = Cart()
-        cart.save()
-        cart_id = cart.id
-        request.session['cart_id'] = cart_id
-        cart = Cart.objects.get(id=cart_id)
+
     form = OrderForm(request.POST or None)
 
     if form.is_valid():
@@ -255,9 +231,70 @@ def make_order_view(request):
         return emailsend
     return render(request, 'test_shop_app/checkout.html')
 
+def account_view(request):
+    try:
+        cart_id = request.session['cart_id']
+        cart = Cart.objects.get(id=cart_id)
+        request.session['total'] = cart.items.count()
+    except:
+        cart = Cart()
+        cart.save()
+        cart_id = cart.id
+        request.session['cart_id'] = cart_id
+        cart = Cart.objects.get(id=cart_id)
+    context = {
+        'cart': cart
+    }
+
+    return render(request, 'test_shop_app/account.html', context)
+
+def registration_view(request):
+    try:
+        cart_id = request.session['cart_id']
+        cart = Cart.objects.get(id=cart_id)
+        request.session['total'] = cart.items.count()
+    except:
+        cart = Cart()
+        cart.save()
+        cart_id = cart.id
+        request.session['cart_id'] = cart_id
+        cart = Cart.objects.get(id=cart_id)
+    form = RegistrationForm(request.POST or None)
+    if form.is_valid():
+        new_user = form.save(commit=False)
+        username = form.cleaned_data['username']
+        password = form.cleaned_data['password']
+        email = form.cleaned_data['email']
+        new_user.username = username
+        new_user.set_password(password)
+        new_user.email = email
+        new_user.save()
+        login_user = authenticate(username=username, password=password)
+        if login_user:
+            login(request, login_user)
+            return HttpResponseRedirect(reverse('index'))
+    context = {
+        'form': form,
+        'cart': cart,
+    }
+    return render(request, 'test_shop_app/registration.html', context)
 
 
 
 
+def login_view(request):
 
+    form = LoginForm(request.POST or None)
+    if form.is_valid():
+        username = form.cleaned_data['username']
+        password = form.cleaned_data['password']
+        login_user = authenticate(username=username, password=password)
+        if login_user:
+            login(request, login_user)
+            return HttpResponseRedirect(reverse('index'))
+    context = {
+        'form': form,
+
+    }
+    return render(request, 'test_shop_app/login.html', context)
 

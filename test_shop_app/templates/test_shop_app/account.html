@@ -1,0 +1,22 @@
+{% extends 'test_shop_app/index.html' %}
+{% block content %}
+
+
+
+
+
+<h3 class="text-center">Личный кабинет пользователя {{ request.user }}</h3>
+<hr>
+<h4 class='text-center'>Ваши заказы</h4>
+<table class='table'>
+
+{% for item in cart.items.all %}
+<tr>
+                        <td>{{ item.product.name }} <strong class="mx-2">x</strong> {{ item.qty }} </td>
+                        <td>{{ item.product.price }}</td>
+                      </tr>
+{% endfor %}
+</table>
+<!-- Button trigger modal -->
+
+{% endblock content %}

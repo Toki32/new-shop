@@ -16,7 +16,9 @@ Including another URLconf
 
 from django.urls import path, re_path
 from . import views
-from django.views.generic.base import TemplateView
+from django.contrib.auth.views import LogoutView
+from django.urls import reverse_lazy
+
 
 urlpatterns = [
     path('', views.index_view, name='index'),
@@ -30,7 +32,10 @@ urlpatterns = [
     re_path('checkout/', views.checkout_view, name= 'checkout'),
     re_path('success/', views.success, name= 'thankyou'),
     re_path(r'^make_order/$', views.make_order_view, name='make_order'),
-
+    re_path(r'^registration/$', views.registration_view, name='registration'),
+    re_path(r'^login/$', views.login_view, name='login'),
+    re_path(r'^logout/$', LogoutView.as_view(next_page=reverse_lazy('index')), name='logout'),
+    re_path(r'^account/$', views.account_view, name='account'),
 
 
 ]
