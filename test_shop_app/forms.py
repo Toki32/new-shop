@@ -62,7 +62,7 @@ class OrderForm(forms.Form):
     last_name = forms.CharField(required=False)
     phone = forms.CharField()
     date = forms.DateField(widget=forms.SelectDateWidget(), initial=timezone.now())
-    address = forms.CharField(required=False)
+    address = forms.CharField()
     comments = forms.CharField(widget=forms.Textarea, required=False)
     email= forms.EmailField()
 

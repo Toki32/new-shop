@@ -7,11 +7,10 @@ from django.shortcuts import render
 
 
 
-def success():
-
-    data = 'kek'
-    print(data)
+def opravdanie(vopsor):
+    vopsor= input('Вопрос:')
 
 
 
-success()
+
+opravdanie()

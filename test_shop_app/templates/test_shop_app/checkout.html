@@ -16,22 +16,11 @@
             <h2 class="h3 mb-3 text-black">Billing Details</h2>
             <div class="p-3 p-lg-5 border">
 
-              <form action='{% url "make_order" %}' method="POST">
+              <form id="form" action='{% url "make_order" %}' method="POST">
                 {% csrf_token %}
-              <div class="form-group">
-                <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
-                <select id="c_country" class="form-control">
-                  <option value="1">Select a country</option>
-                  <option value="2">bangladesh</option>
-                  <option value="3">Algeria</option>
-                  <option value="4">Afghanistan</option>
-                  <option value="5">Ghana</option>
-                  <option value="6">Albania</option>
-                  <option value="7">Bahrain</option>
-                  <option value="8">Colombia</option>
-                  <option value="9">Dominican Republic</option>
-                </select>
-              </div>
+                {% if not request.user.is_authenticated %}
+                <label for="c_code" class="text-black mb-3">Чтобы оформить заказ, зарегистрируйтесь</label>
+                {% else %}
 
               <div class="form-group row">
                 <div class="col-md-6">
@@ -88,9 +77,11 @@
               <div class="form-group">
                 {{ form.comments|as_crispy_field }}
               </div>
-                                 <div class="form-group">
+
+                <div class="form-group">
                     <input type='submit' class='btn btn-success' value='Оформить заказ'>
-                  </div>
+                </div>
+                {% endif %}
               </form>
             </div>
           </div>
@@ -130,14 +121,7 @@
                         <td>{{ item.product.price }}</td>
                       </tr>
                       {% endfor %}
-                      <tr>
-                        <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
-                        <td class="text-black">?</td>
-                      </tr>
-                      <tr>
-                        <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
-                        <td class="text-black font-weight-bold"><strong>?</strong></td>
-                      </tr>
+
                     </tbody>
 
                   </table>
@@ -182,5 +166,19 @@
         <!-- </form> -->
       </div>
     </div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() {
+            var form_data = $(this).serialize();
+            $.ajax({
+            type: "POST",
+            url: '{% url "success" %}'
+            data: form_data,
+            success: function() {
 
+                   alert("Ваше сообщение отправлено!");
+            });
+    });
+});
+</script>
 {% endblock content %}

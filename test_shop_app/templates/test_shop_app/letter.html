@@ -1,11 +1,11 @@
 
 
-Здравствуйте! Ваш заказ:
+Здравствуйте!
+Ваш заказ:
 {% for item in cart.items.all %}
-{{ item.product.name }} х {{ item.product.qty }}
+{{ item.product.name }} х {{ item.product.qty }} на сумму {{ item.product.price }} руб.
 {% endfor %}
-На сумму:
-# total #
+
 
 
 

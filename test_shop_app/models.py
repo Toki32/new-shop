@@ -1,14 +1,19 @@
 from django.db import models
 from django.urls import reverse
 from django.conf import settings
+from decimal import Decimal
 
 # Create your models here.
 
+def image_folder(instanse, filename):
+    filename= instanse.slug + '.' + filename.split('.')[1]
+    return "{0}/{1}".format(instanse.slug, filename)
 
 class Category(models.Model):
 
     name = models.CharField(max_length= 200, db_index=True)
     slug = models.SlugField(max_length= 200, db_index=True, unique=True)
+    image = models.ImageField(upload_to=image_folder, verbose_name="Изображение товара", default=0)
 
     def __str__(self):
         return self.name
@@ -24,9 +29,7 @@ class Brand(models.Model):
     def __str__(self):
         return self.name
 
-def image_folder(instanse, filename):
-    filename= instanse.slug + '.' + filename.split('.')[1]
-    return "{0}/{1}".format(instanse.slug, filename)
+
 
 
 
@@ -67,13 +70,26 @@ class CartItem(models.Model):
 class Cart(models.Model):
 
     items = models.ManyToManyField(CartItem,blank=True)
-    basket_total= models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
+    cart_total= models.DecimalField(max_digits=9, decimal_places=2, default=0.00)
 
     def __str__(self):
         return str(self.id)
 
+    def change_qty(self, qty, item_id):
+        cart = self
+        cart_item = CartItem.objects.get(id=int(item_id))
+        cart_item.qty = int(qty)
+        cart_item.item_total = int(qty) * Decimal(cart_item.product.price)
+        cart_item.save()
+        new_cart_total = 0.00
+        for item in cart.items.all():
+            new_cart_total += float(item.item_total)
+        cart.cart_total = new_cart_total
+        cart.save()
+
 
 class Shop(models.Model):
+
     title = models.CharField(max_length=200, db_index=True, verbose_name="Название")
     slug = models.SlugField(max_length=200, db_index=True, default='store_1')
     time = models.CharField(max_length=200, db_index=True, verbose_name="Время работы")

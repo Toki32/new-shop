@@ -135,5 +135,5 @@ EMAIL_USE_SSL = True
 EMAIL_USE_TLS= False
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'kekvald@yandex.ru'
-EMAIL_HOST_PASSWORD = 'Skin32123'
+EMAIL_HOST_USER = 'maximus-canem@yandex.ru'
+EMAIL_HOST_PASSWORD = 'maximpes'

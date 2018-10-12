@@ -84,6 +84,7 @@ def cart_view(request):
         cart_id = cart.id
         request.session['cart_id'] = cart_id
         cart = Cart.objects.get(id=cart_id)
+    
     context= {
         'cart': cart
     }
@@ -148,8 +149,19 @@ def contact_view(request):
     return render(request, 'test_shop_app/contact.html', context)
 
 def shop_view(request, shop_slug):
+    try:
+        cart_id = request.session['cart_id']
+        cart = Cart.objects.get(id=cart_id)
+        request.session['total'] = cart.items.count()
+    except:
+        cart = Cart()
+        cart.save()
+        cart_id = cart.id
+        request.session['cart_id'] = cart_id
+        cart = Cart.objects.get(id=cart_id)
     shop= Shop.objects.get(slug= shop_slug)
     context = {
+        'cart': cart,
         'shop': shop
     }
     return render(request, 'test_shop_app/store1.html', context)
@@ -198,7 +210,7 @@ def success(request, usermail):
         }
     data= htmly.render(context)
 
-    send_mail('Welcome!', data, "kekvald@yandex.ru",
+    send_mail('Welcome!', data, "maximus-canem@yandex.ru",
                   [usermail], fail_silently=False)
     return render(request, 'test_shop_app/thankyou.html')
 
